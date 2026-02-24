@@ -1,0 +1,25 @@
+print("1 create and access set elements")
+set_a = {100, 200, 300, 400, 500}
+print("Created Set A:", set_a)
+
+print("Accessing set elements:")
+for element in set_a:
+    print(element, end=" ")
+print()
+
+print("2 Union of the elements")
+set_b = {400, 500, 600, 700, 800}
+print("Set B:", set_b)
+union_set = set_a.union(set_b)
+print("Union of Set A and Set B:", union_set)
+
+print("3 Intersection of the elements")
+intersection_set = set_a.intersection(set_b)
+print("Intersection of Set A and Set B:", intersection_set)
+
+print("4 Difference of the elements")
+difference_set_a_b = set_a.difference(set_b)  
+print("Difference of Set A - Set B:", difference_set_a_b)
+
+difference_set_b_a = set_b.difference(set_a)  
+print("Difference of set B - Set A:", difference_set_b_a)
